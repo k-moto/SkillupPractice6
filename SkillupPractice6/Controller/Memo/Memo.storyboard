@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Memo View Controller-->
+        <scene sceneID="vME-mR-c0B">
+            <objects>
+                <viewController storyboardIdentifier="MemoViewController" id="iTG-1e-Nen" customClass="MemoViewController" customModule="SkillupPractice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IWQ-QY-gR3"/>
+                        <viewControllerLayoutGuide type="bottom" id="qPg-oP-2MN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rod-tS-AmC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MemoViewController" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J21-N0-xfb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J21-N0-xfb" firstAttribute="leading" secondItem="Rod-tS-AmC" secondAttribute="leading" id="96N-7G-WUU"/>
+                            <constraint firstAttribute="trailing" secondItem="J21-N0-xfb" secondAttribute="trailing" id="BPB-o9-1Wx"/>
+                            <constraint firstAttribute="bottom" secondItem="J21-N0-xfb" secondAttribute="bottom" id="CfI-JA-fda"/>
+                            <constraint firstItem="J21-N0-xfb" firstAttribute="top" secondItem="Rod-tS-AmC" secondAttribute="top" id="coS-X7-uGs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="memoText" destination="J21-N0-xfb" id="Jhn-TK-XXs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkj-AI-atg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="150"/>
+        </scene>
+    </scenes>
+</document>

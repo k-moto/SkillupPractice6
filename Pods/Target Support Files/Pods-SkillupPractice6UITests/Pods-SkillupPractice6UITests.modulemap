@@ -1,0 +1,6 @@
+framework module Pods_SkillupPractice6UITests {
+  umbrella header "Pods-SkillupPractice6UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
